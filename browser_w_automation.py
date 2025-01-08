@@ -82,3 +82,57 @@ webBrowser.open('www.instagram.com')
         driver.findElement(By.id("password")).sendKeys("xyz12345");
         driver.findElement(By.className("signin-button")).click();
     }
+
+
+
+
+
+
+exe1 = Executable(script = "hellogtk.py", targetName = "hellogtk.exe", base = "Win32GUI", )
+
+exe2 = Executable(script = "hellogtk.py", targetName = "hellogtk_console.exe", base = "Console", )
+
+
+setup(  executables = [exe1, exe2], )
+
+
+setup(
+    name = "hellogtk",
+    author = " Chad",
+    version = "0.1",
+    description = "GTK3+Cairo Hello World",
+    options = {
+        "build_exe": dict(
+            compressed = False,
+            include_files = common_include_files,
+            silent = True,
+            packages = common_packages,
+        ),
+    },
+    executables = [exe1, exe2],)
+
+
+
+
+
+
+
+if __name__ == "__main__":
+
+    app = QApplication(sys.argv)
+
+    label = QLabel("Hello World", alignment=Qt.Alignment.AlignCenter)
+
+    label.show()
+
+    sys.exit(app.exec())
+
+
+
+
+
+
+
+
+
+
