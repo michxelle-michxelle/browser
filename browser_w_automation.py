@@ -42,7 +42,12 @@ webBrowser.open('www.instagram.com')
  driver.findElement(By.xpath("//*[@id=\"confirmButton\"]")).click(); Thread.sleep(3000);
 
 
-//DBS PROMPT
+//UPLOAD ANSWER DBS PROMPT
+
+
+ 
+
+
 
     Alert alert = driver.switchTo().alert();  alert.accept();
 
