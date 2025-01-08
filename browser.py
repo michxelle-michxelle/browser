@@ -90,7 +90,7 @@ class Window(QMainWindow):
 
 
 app = QApplication(argv)
-app.setApplicationName('PythonGeeks Web Browser')
+app.setApplicationName(' Web Browser')
 
 window = Window()
 app.exec_()
