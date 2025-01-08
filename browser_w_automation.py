@@ -39,7 +39,7 @@ root.geometry("660x660")
 WebDriver driver = new ChromeDriver("C://browser.exe");
 webBrowser.open('www.instagram.com')
 
- driver.findElement(By.xpath("//*[@id=\"confirmButton\"]")).click(); Thread.sleep(3000);
+        driver.findElement(By.xpath("//*[@id=\"confirmButton\"]")).click(); Thread.sleep(3000);
 
 
 //UPLOAD ANSWER DBS PROMPT
@@ -49,14 +49,16 @@ webBrowser.open('www.instagram.com')
 
 
 
-    Alert alert = driver.switchTo().alert();  alert.accept();
+  Alert alert = driver.switchTo().alert();  alert.accept();
 
         driver.findElement(By.id("dbs")).sendKeys("000000);
         driver.findElement(By.className("dbs-button")).click(); Thread.sleep(3000);
     }
 
 
-
+         file_input = driver.find_element_by_id("file-input"); time.sleep(60)
+         file_input.sendKeys("C:\\certificate"); time.sleep(60)
+         submit_button = driver.find_element_by_id("submit-button"); time.sleep(60)
 
 
 
