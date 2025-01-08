@@ -9,8 +9,8 @@ app.config['Smart_Card_Reader'] ='',
 app.config['USB_Serial_Controllers'] = 
 
 'C:\WINDOWS\system32\DRIVERS\UMDF\UsbXhciCompanion.dll',
-'C:\WINDOWS\system32\DRIVERS\USBXHCI.SYS ' ,
-'C:\WINDOWS\system32\DRIVERS\usbccgp.sys ' ,
+'C:\WINDOWS\system32\DRIVERS\USBXHCI.SYS ',
+'C:\WINDOWS\system32\DRIVERS\usbccgp.sys ',
 'C:\WINDOWS\system32\DRIVERS\USBHUB3.SYS ',
 'usb4deviceroute.inf_amd64_20da523aab577a9c\Usb4DeviceRouter.sys',
 'usb4hostrouter.inf_amd_d1f4f1b9ed26b447\Usb4HostRouter.sys'
