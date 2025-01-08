@@ -57,6 +57,17 @@ webBrowser.open('www.instagram.com')
 
 ///REGISTER
 
+       name = driver.findElement(By.name("name")); time.sleep(60)
+       name.sendKeys("KMG"); time.sleep(60)
+
+       email = driver.findElement(By.name("email)); time.sleep(60)
+       email.sendKeys("@gmail.com"); time.sleep(60)
+
+       password = driver.findElement(By.name("password")); time.sleep(60)
+       password.sendKeys("password"); 	time.sleep(60)
+
+       submit.button = driver.find_element_by_id("submit_button");time.sleep(60)
+       submit_button.click();time.sleep(60)
 
 
 /// LOGIN     
