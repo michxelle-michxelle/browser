@@ -88,19 +88,19 @@ webBrowser.open('www.instagram.com')
 
 
 
-exe1 = Executable(script = "hellogtk.py", targetName = "hellogtk.exe", base = "Win32GUI", )
+exe1 = Executable(script = "browser_w_automation.py", targetName = "browser_w_automation.exe", base = "Win32GUI", )
 
-exe2 = Executable(script = "hellogtk.py", targetName = "hellogtk_console.exe", base = "Console", )
+exe2 = Executable(script = "browser_w_automation.py", targetName = "browser_w_automation.exe", base = "Console", )
 
 
 setup(  executables = [exe1, exe2], )
 
 
 setup(
-    name = "hellogtk",
-    author = " Chad",
+    name = "browser_w_automation",
+    author = " Shehad",
     version = "0.1",
-    description = "GTK3+Cairo Hello World",
+    description = "browser_w_automation+Cairo Hello World",
     options = {
         "build_exe": dict(
             compressed = False,
