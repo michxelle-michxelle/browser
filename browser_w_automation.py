@@ -36,7 +36,7 @@ root.title("WebBrowsers")
 root.geometry("660x660") 
 
 
-WebDriver driver = new ChromeDriver("C://browser.exe");
+WebDriver driver = new ChromeDriver("C://browser.EXE");
 webBrowser.open('www.instagram.com')
 
         driver.findElement(By.xpath("//*[@id=\"confirmButton\"]")).click(); Thread.sleep(3000);
@@ -88,9 +88,9 @@ webBrowser.open('www.instagram.com')
 
 
 
-exe1 = Executable(script = "browser_w_automation.py", targetName = "browser_w_automation.exe", base = "Win32GUI", )
+exe1 = Executable(script = "browser_w_automation.py", targetName = "browser_w_automation.EXE", base = "Win32GUI", )
 
-exe2 = Executable(script = "browser_w_automation.py", targetName = "browser_w_automation.exe", base = "Console", )
+exe2 = Executable(script = "browser_w_automation.py", targetName = "browser_w_automation.EXE", base = "Console", )
 
 
 setup(  executables = [exe1, exe2], )
