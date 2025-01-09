@@ -33,7 +33,10 @@ app.config[USB_Connector_Managers] = 'C:\WINDOWS\system32\DRIVERS\UcmUcsiAcpiCli
 
 root = Tk() 
 root.title("WebBrowsers") 
+root.iconbitmap('C://.ico')
 root.geometry("660x660") 
+
+root.mainloop() 
 
 
 WebDriver driver = new ChromeDriver("C://browser.EXE");
