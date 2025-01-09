@@ -35,7 +35,6 @@ root = Tk()
 root.title("WebBrowsers") 
 root.iconbitmap('C://.ico')
 root.geometry("660x660") 
-
 root.mainloop() 
 
 
