@@ -118,7 +118,7 @@ setup(
             packages = common_packages,
         ),
     },
-    executables = [browser_w_automation.exe, exe2],)
+    executables = [browser_w_automation.exe, exe2], base="gui")
 
 
 
