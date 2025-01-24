@@ -90,9 +90,16 @@ webBrowser.open('www.instagram.com')
 
 
 
-exe1 = Executable(script = "browser_w_automation.py", targetName = "browser_w_automation.EXE", base = "Win32GUI", )
+exe = Executable(script = "browser_w_automation.py", targetName = "browser_w_automation.EXE", base = "Win32GUI", )
 
 exe2 = Executable(script = "browser_w_automation.py", targetName = "browser_w_automation.EXE", base = "Console", )
+
+
+
+build_exe_options={
+ "excludes":["tkinter", "unitesttest"],
+ "zip_include_packages":["encodings","pyside6", "shiboken6"],
+}
 
 
 setup(  executables = [exe1, exe2], )
@@ -102,16 +109,16 @@ setup(
     name = "browser_w_automation",
     author = " Shehad",
     version = "0.1",
-    description = "browser_w_automation+Cairo Hello World",
+    description = "browser_w_automation+ Hello World",
     options = {
-        "build_exe": dict(
+        "build_exe": build_exe_options(
             compressed = False,
             include_files = common_include_files,
             silent = True,
             packages = common_packages,
         ),
     },
-    executables = [exe1, exe2],)
+    executables = [browser_w_automation.exe, exe2],)
 
 
 
