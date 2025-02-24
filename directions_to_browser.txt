@@ -23,3 +23,7 @@ Combined those two portions into the browser then referenced this site more the 
       "https://cx-freeze.readthedocs.io/en/latest/faq.html"
 
   
+Make sure to change the link to your own personal computer directory.
+
+
+Every computer has the usb links, however each login is created with unique identifer and the links need to be changed.
