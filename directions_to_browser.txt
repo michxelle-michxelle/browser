@@ -2,20 +2,12 @@ These are not self-explanatory directions relative to browser.py
 
 All that was done was:
 
-
-
 We found the directory that our folder was in ( open folder  to C: location, then type cmd to open terminal)
 
-
-
-  
 
 We utilized cx_freeze by typing: cxfreeze-quickstart in the terminal
 
   then pyinstaller setup.py build
-
-
-
 
   
 Combined those two portions into the browser then referenced this site more the rest of the information:
